@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Safe Rant Board (Email Version)</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9fafc; padding: 20px; }
+    main { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    textarea { width: 100%; height: 120px; margin-top: 8px; padding: 8px; }
+    input, button { margin-top: 8px; padding: 10px; font-size: 14px; }
+    button { background: #2b6cb0; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    .hotlines { margin-top: 30px; padding: 15px; background: #f1f5f9; border-left: 5px solid #2b6cb0; border-radius: 5px; }
+    .hotlines h2 { margin-top: 0; color: #2b6cb0; }
+    .hotlines p { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Safe Rant Board</h1>
+    <p>Write your rant here. Only the owner will see it.</p>
+
+    <form action="https://formsubmit.co/iyyasmgg@gmail.com" method="POST">
+      <input id="name" name="name" placeholder="Your name (optional)" maxlength="50" />
+      <textarea id="message" name="message" placeholder="Write your rant..." maxlength="1000" required></textarea>
+      <button type="submit">Send Rant</button>
+
+      <!-- Hidden settings for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Rant Submission">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="Thanks for sharing your rant! It has been received.">
+      <input type="hidden" name="_next" value="thank-you.html">
+    </form>
+
+    <!-- Mental Health Hotlines -->
+    <div class="hotlines">
+      <h2>📞 Mental Health Hotlines (Philippines)</h2>
+      <p><strong>DOH-NCMH Crisis Hotline:</strong> 1553 (toll-free landline)</p>
+      <p><strong>Globe/TM:</strong> 0917-899-8727</p>
+      <p><strong>Smart/Sun/TNT:</strong> 0908-639-2672</p>
+      <p><strong>Hopeline PH:</strong> (02) 8804-4673 / 0917-558-4673</p>
+      <p><strong>In Touch Crisis Line:</strong> (02) 8893-7603</p>
+    </div>
+  </main>
+</body>
+</html>
